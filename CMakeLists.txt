@@ -11,5 +11,8 @@ target_include_directories(get_num PUBLIC include)
 
 add_executable(copy fileio/copy.c)
 target_link_libraries(copy PUBLIC error_functions)
+
 add_executable(seek_io fileio/seek_io.c)
 target_link_libraries(seek_io PUBLIC error_functions get_num)
+
+add_executable(tee fileio/tee.c)
